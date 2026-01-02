@@ -16,9 +16,19 @@
 .gpt3__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 62px;
+    font-size: 57px;
     line-height: 75px;
     letter-spacing: -0.04em;
+}
+
+.gpt3__header-content h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-subhead);
+
+    margin-top: 0.5rem;
 }
 
 .gpt3__header-content p {
@@ -36,30 +46,14 @@
     margin: 2rem 0 1rem;
 
     display: flex;
+    gap: 5%;
     flex-direction: row;
 }
 
-.gpt3__header-content__input input {
-    flex: 2;
+.gpt3__header-content__input .button1 {
+    /* flex: 0.6; */
     width: 100%;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: var(--color-footer);
-    border: 2px solid var(--color-footer);
-    padding: 0 1rem;
-    outline: none;
-    color: #fff;
-
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.gpt3__header-content__input button {
-    flex: 0.6;
-    width: 100%;
+    /* gap: 20%; */
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -72,8 +66,32 @@
     cursor: pointer;
     outline: none;
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 7px;
+    /* border-bottom-right-radius: 5px; */
+}
+
+.gpt3__header-content__input .button2 {
+    /* flex: 0.6; */
+    width: 100%;
+    /* gap: 20%; */
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: transparent;
+    /* border: 2px solid transparent; */
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    
+    border-radius: 7px;
+}
+
+.gpt3__header-content__input .button2:hover {
+    background: #FF4820;
 }
 
 .gpt3__header-content__people {

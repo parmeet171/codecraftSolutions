@@ -1,21 +1,32 @@
-import React from 'react';
-import gpt3Logo from '../../assets/logo.svg';
-import './footer.css';
+import React from "react";
+import gpt3Logo from "../../assets/logo.svg";
+import "./footer.css";
 
 const Footer = () => (
   <div className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+      <h1 className="gradient__text">
+        Ready to start your next project with us?
+      </h1>
     </div>
 
-    <div className="gpt3__footer-btn">
+    {/* <div className="gpt3__footer-btn">
       <p>Request Early Access</p>
+    </div> */}
+
+    <div className="gpt3__footer-content__input">
+      <input type="email" placeholder="Your Email Address" />
+        <button type="button">
+          Contact US
+        </button>
     </div>
 
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         <img src={gpt3Logo} alt="gpt3_logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+        <p>
+          Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved
+        </p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
@@ -39,7 +50,13 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2022 GPT-3. All rights reserved. Made by  <strong className="gradient__text" style={{fontSize: "15px"}}>&nbsp;GodUssap </strong>😎🤞</p>
+      <p>
+        @2022 GPT-3. All rights reserved. Made by{" "}
+        <strong className="gradient__text" style={{ fontSize: "15px" }}>
+          &nbsp;GodUssap{" "}
+        </strong>
+        😎🤞
+      </p>
     </div>
   </div>
 );
